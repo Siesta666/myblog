@@ -18,7 +18,8 @@ license: false
 
 联系方式：
 
-Email：[bwz1169391936@sjtu.edu.cn]
+Email：bwz1169391936@sjtu.edu.cn
+
 QQ：1169391936
 
 <!-- 这里是一个用 Hugo 和 Stack 主题搭建的物理学习笔记站点。
