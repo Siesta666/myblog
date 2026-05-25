@@ -1,0 +1,173 @@
+baseURL = 'https://siesta666.github.io/myblog/'
+languageCode = 'zh-cn'
+defaultContentLanguage = 'zh'
+title = '物理学习笔记'
+hasCJKLanguage = true
+enableRobotsTXT = true
+timeZone = 'Asia/Shanghai'
+copyright = '除特别说明外，本站内容采用 CC BY-NC-SA 4.0 协议分享。'
+
+[languages.zh]
+languageName = '简体中文'
+title = '物理学习笔记'
+weight = 1
+
+[pagination]
+pagerSize = 8
+
+[permalinks]
+post = '/notes/:slug/'
+
+[taxonomies]
+category = 'categories'
+tag = 'tags'
+series = 'series'
+
+[outputs]
+home = ['HTML', 'RSS']
+
+[services.rss]
+limit = 20
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+[module]
+proxy = 'https://goproxy.cn,direct'
+
+[[module.imports]]
+path = 'github.com/CaiJimmy/hugo-theme-stack/v4'
+
+[params]
+mainSections = ['post']
+description = '围绕力学、电磁学、量子力学与数学工具整理的学习笔记。'
+rssFullContent = true
+favicon = 'img/favicon.svg'
+
+  [params.author]
+  name = 'Siesta666'
+
+  [params.sidebar]
+  subtitle = '从概念到推导的物理学习笔记'
+  avatar = 'img/avatar.svg'
+  compact = false
+
+  [params.footer]
+  since = 2026
+  customText = 'Theme Stack designed by Jimmy.'
+
+  [params.dateFormat]
+  published = '2006-01-02'
+  lastUpdated = '2006-01-02'
+
+  [params.article]
+  math = true
+  toc = true
+  readingTime = true
+  headingAnchor = true
+
+    [params.article.list]
+    showTags = true
+
+    [params.article.license]
+    enabled = true
+    default = 'Licensed under CC BY-NC-SA 4.0'
+
+    [params.article.mermaid]
+    look = 'classic'
+    lightTheme = 'neutral'
+    darkTheme = 'dark'
+
+  [params.comments]
+  enabled = false
+
+  [params.colorScheme]
+  toggle = true
+  default = 'auto'
+
+  [params.imageProcessing]
+  autoOrient = false
+
+    [params.imageProcessing.content]
+    enabled = true
+    widths = [800, 1200, 1600]
+
+    [params.imageProcessing.thumbnail]
+    enabled = true
+
+  [params.widgets]
+  homepage = [
+    { type = 'search' },
+    { type = 'categories', params = { limit = 8 } },
+    { type = 'tag-cloud', params = { limit = 24 } },
+    { type = 'archives', params = { limit = 5 } },
+  ]
+  page = [
+    { type = 'toc' },
+    { type = 'tag-cloud', params = { limit = 24 } },
+  ]
+
+[[menu.main]]
+identifier = 'home'
+name = '首页'
+url = '/'
+weight = 10
+  [menu.main.params]
+  icon = 'home'
+
+[[menu.main]]
+identifier = 'notes'
+name = '笔记'
+url = '/post/'
+weight = 20
+  [menu.main.params]
+  icon = 'archives'
+
+[[menu.main]]
+identifier = 'categories'
+name = '分类'
+url = '/categories/'
+weight = 30
+  [menu.main.params]
+  icon = 'categories'
+
+[[menu.main]]
+identifier = 'tags'
+name = '标签'
+url = '/tags/'
+weight = 40
+  [menu.main.params]
+  icon = 'tag'
+
+[[menu.main]]
+identifier = 'search'
+name = '搜索'
+url = '/search/'
+weight = 50
+  [menu.main.params]
+  icon = 'search'
+
+[[menu.main]]
+identifier = 'about'
+name = '关于'
+url = '/about/'
+weight = 60
+  [menu.main.params]
+  icon = 'user'
+
+[[menu.social]]
+identifier = 'github'
+name = 'GitHub'
+url = 'https://github.com/Siesta666/myblog'
+weight = 10
+  [menu.social.params]
+  icon = 'brand-github'
+  newTab = true

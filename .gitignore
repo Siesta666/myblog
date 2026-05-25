@@ -1,0 +1,9 @@
+/public/
+/resources/_gen/
+/.hugo_build.lock
+/.hugo-server.*.log
+/hugo_stats.json
+/node_modules/
+/myblog/
+.DS_Store
+Thumbs.db
