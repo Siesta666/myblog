@@ -15,9 +15,3 @@ toc: true
 comments: false
 license: "CC BY-NC-SA 4.0"
 ---
-
-## 问题
-
-## 推导
-
-## 小结
