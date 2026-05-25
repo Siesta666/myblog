@@ -57,8 +57,8 @@ jobs:
 
       - name: Download modules
         run: |
-          go env -w GOPROXY=https://proxy.golang.org,direct
-          hugo mod download
+          go env -w GOPROXY="${HUGO_MODULE_PROXY}"
+          go mod download
 
       - name: Build site
         run: |
