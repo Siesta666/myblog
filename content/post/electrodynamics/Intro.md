@@ -4,7 +4,7 @@ slug: "Intro"
 description: ""
 date: 2026-05-25T21:13:10+08:00
 lastmod: 2026-05-25T21:13:10+08:00
-draft: true
+draft: false
 categories:
   - "电动力学"
 tags:
@@ -57,3 +57,5 @@ $$
   \mathbf{F}_x & \mathbf{F}_y & \mathbf{F}_z 
 \end{bmatrix}
 $$
+
+我们也可以写成这样
