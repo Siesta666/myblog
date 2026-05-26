@@ -59,3 +59,45 @@ $$
 $$
 
 我们也可以写成这样
+
+$$
+\nabla \times \mathbf{F} = \lim_{S \rightarrow 0}\frac{\oint_C \mathbf{F}\cdot \mathrm{d}\mathbf{l}}{S}
+$$
+
+### 曲线坐标系
+
+我们在处理具体问题的时候，通常不会遇到方方正正的电场，大部分场都是球对称或柱对称的，于是我们需要引入曲线坐标系来描述空间的场，接下来我将介绍**柱坐标系**和**球坐标系**。
+
+#### 柱坐标系
+
+柱坐标系使用 $(r, \theta, z)$ 来表述场的空间位置，相当于极坐标的三维扩展版，我们可以得到笛卡尔坐标系和柱坐标系的变换。
+
+我们记 $(X,Y,Z)$ 是笛卡尔坐标系中的位置表述，得到：
+
+$$
+\begin{aligned}
+  r &= \cos{\theta}X + \sin{\theta}Y\\
+  \theta &= \arctan{\frac{Y}{X}}\\
+  Z&=z
+\end{aligned}
+$$
+
+这种变换不是线性变换，我们不能直接找到一个矩阵来表示这种非线性变换，但是我们可以使用雅可比矩阵来表示小区域的变换 $\frac{\partial Q_i}{\partial q_j}$ ，这相当于是一种局部线性化处理。
+
+我们还需要关注柱坐标系中的微分算子：
+
+$$
+\begin{aligned}
+  \nabla f &= \frac{\partial f}{\partial r}\hat{r} + \frac{\partial f}{r \partial \theta }\hat{\theta} + \frac{\partial f}{\partial z}\hat{z}\\
+  \nabla \cdot \mathbf{F} &= \frac{\partial r\mathbf{F}_r}{r\partial r} + \frac{\partial \mathbf{F}_{\theta}}{r\partial r} + \frac{\partial \mathbf{F}_z}{\partial  z} \\
+  \nabla \times \mathbf{F} &=
+  \begin{bmatrix}
+    \hat{r} & r\hat{\theta} & \hat{z} \\
+    \frac{\partial }{\partial r} & \frac{\partial}{\partial \theta} & \frac{\partial }{\partial z} \\
+    \mathbf{F}_r & r \mathbf{F}_\theta & \mathbf{F}_z
+  \end{bmatrix}
+\end{aligned}
+$$
+
+#### 球坐标
+
