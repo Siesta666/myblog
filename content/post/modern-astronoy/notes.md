@@ -1,7 +1,7 @@
 ---
 title: "Notes"
 slug: "notes"
-description: ""
+description: "现代天文学笔记"
 date: 2026-06-16T13:50:18+08:00
 lastmod: 2026-06-16T13:50:18+08:00
 draft: false
