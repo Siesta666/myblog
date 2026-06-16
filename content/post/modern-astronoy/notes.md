@@ -15,9 +15,6 @@ toc: true
 comments: false
 license: "CC BY-NC-SA 4.0"
 ---
-
-# Notes
-
 ## Chapter 1 
 
 **SN1054** 北宋时期观测到的超新星爆发
