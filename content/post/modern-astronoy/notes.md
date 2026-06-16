@@ -433,7 +433,7 @@ V_t &= d[A\cos(2l) + B]
 \end{aligned}
 $$
 $V_r$是相对于太阳的径向速度，$A \approx 14.8km/s/kpc$，$B \approx -12.5km/s/kpc$, 当P在T点，径向速度是最小值
-![[A.png]]
+![alt](A.png)
 
 **银河自转曲线（Rotation curve of the Milky Way）** 
 ![[rotation.png]]
