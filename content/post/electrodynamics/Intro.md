@@ -10,7 +10,7 @@ categories:
 tags:
   - "数学"
   - "矢量分析"
-series: [格里菲斯电动力学]
+series: [电动力学]
 math: true
 toc: true
 comments: false
